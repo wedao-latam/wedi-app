@@ -85,3 +85,117 @@ If you have questions, comments, or need help with code, we're here to help:
 * on Twitter at [@BuildOnCircle](https://twitter.com/BuildOnCircle)
 
 Check out our [developer docs](https://developers.circle.com/w3s/docs).
+
+
+
+It seems the CocoaPods version on your system is still 1.5.2. You need to update it to at least 1.13.0. Let's try updating CocoaPods again, and ensure we are using the correct installation method. Follow these steps:
+
+### 1. Uninstall Existing CocoaPods
+
+First, uninstall the current version of CocoaPods:
+
+```bash
+sudo gem uninstall cocoapods
+```
+
+### 2. Reinstall CocoaPods
+
+Now, install the latest version of CocoaPods:
+
+#### Using RubyGems:
+
+```bash
+sudo gem install cocoapods
+```
+
+#### Using Homebrew:
+
+```bash
+brew install cocoapods
+```
+
+### 3. Verify Installation
+
+Verify that the installation was successful and that you have the correct version:
+
+```bash
+pod --version
+```
+
+You should see a version equal to or higher than 1.13.0.
+
+### 4. Reinstall Pods
+
+Navigate to your project directory and update the pods:
+
+```bash
+cd /path/to/your/project
+pod repo update
+pod install --repo-update
+```
+
+### 5. Clean Xcode Project
+
+If the project still fails to build, try cleaning the Xcode project and deleting derived data:
+
+```bash
+rm -rf ~/Library/Developer/Xcode/DerivedData
+```
+
+Then, in Xcode, go to `Product > Clean Build Folder` (or press `Shift + Command + K`).
+
+### Improved Podfile
+
+Here is the updated `Podfile` with the additional necessary dependencies and enhancements:
+
+```ruby
+#  Copyright (c) 2023, Circle Technologies, LLC. All rights reserved.
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/circlefin/w3s-ios-sdk.git'
+
+platform :ios, '14.0'
+
+target 'w3s-ios-sample-app-wallets' do
+  # Use frameworks for dependencies
+  use_frameworks! :linkage => :static
+
+  # Add necessary pods
+  pod 'CircleProgrammableWalletSDK'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+
+  # Ensure proper Swift version
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+        config.build_settings['SWIFT_VERSION'] = '5.0'
+      end
+    end
+  end
+end
+```
+
+### Summary
+
+1. **Uninstall Existing CocoaPods**: Remove the old version.
+2. **Reinstall CocoaPods**: Install the latest version.
+3. **Verify Installation**: Check the CocoaPods version.
+4. **Update Pods**: Run `pod repo update` and `pod install --repo-update`.
+5. **Clean Xcode Project**: Remove derived data and clean the build folder.
+6. **Improved Podfile**: Use the provided `Podfile` with additional dependencies and configurations.
+
+By following these steps, you should be able to resolve the version mismatch and build errors. If you encounter any further issues, please let me know!
