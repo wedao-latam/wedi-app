@@ -1,116 +1,87 @@
-# Circle Programmable Wallet SDK for React Native - Sample
+# Overview
 
-> Sample app for integrating Circle Programmable Wallet React Native SDK.
+The Digital Wallet App serves as a demonstration of integrating social sign-in functionality with web3 wallet generation. Upon a successful user authentication, the app automatically generates a web3 wallet, linking it to the authenticated user account. Beyond this, the app supports token transaction fuctionality, allowing users to send and receive tokens, coupled with a fee estimator for customizing transaction speeds.
 
-- Bookmark
-  - [Requirement](#requirement)
-  - [Authenticate the npm registry](#authenticate-the-npm-registry)
-  - [Installation](#installation)
-  - [New Architecture Support](#new-architecture-support)
-  - [Run the Sample App](#requirement)
----
+### Prerequisites
 
+* Sign up for the Circle Developer account here: https://console.circle.com/signup.
+* Make sure you have [Xcode](https://apps.apple.com/tw/app/xcode/id497799835?mt=12) installed for iOS app developement.
+* Ensure you have [Node.js](https://nodejs.org/en/download) and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed.
+* Ensure you have [CocoaPods](https://formulae.brew.sh/formula/cocoapods) installed for managing iOS dependencies
 
-## Requirement
-### Android
-- Java 17 is required for the sample app.
-### iOS
-- Xcode 14.1+    
-Install Apple’s Xcode development software: [Xcode in the Apple App Store](https://apps.apple.com/tw/app/xcode/id497799835?mt=12).
+### Setup Instructions
+#### Frontend(iOS)
+1. Navigate to the iOS App Directory
+    ```bash
+    cd frontend/wedi-app
+    ```
 
-- CocoaPods    
-**CocoaPods** is a dependency manager for iOS projects. [Install CocoaPods by Homebrew](https://formulae.brew.sh/formula/cocoapods). (suggestion)    
-  > Check if Homebrew is installed:
+2. Install the Dependencies
+   Run the following command to install the `CircleProgrammableWalletSDK`:
+    ```bash
+    pod install
+    ```
 
-  ```shell
-  $ brew
-  ```
+3. Open the App in Xcode
+   Once the dependencies are installed, open the `.xcworkspace` file:
+   ```bash
+    open wedi-app.xcworkspace
+    ```
 
-  > How to install Homebrew on MacOS: [Link](https://mac.install.guide/homebrew/3.html)
+4. Insert your App ID
+   In Xcode, navigate to the `ContentView` file inside the `Views` folder. Replace the placeholder with your actual App ID obtained from the web3 developer console. 
 
-## Authenticate the npm registry
+5. Set Up Google Sign-In
+   a. Download the `GoogleService-Info.plist`
+   Navigate to the Google Developers Console, create or select a project, then enable the Google Sign-In API. Once done, you will be prompted to donwload a configuration file: `GoogleService-Info.plist`.
+   b. Add `GoogleService-Info.plist` to your Xcode project.
+   Ensure that the file is included in your app target.
+   c. Configure URL Schemes
+   Open the `Info.plist` in your Xcode project and look for the `URL Types` key. Add a new item with your reversed client ID from the `GoogleService-Info.plist`. This step ensures that after the sign-in, the app will handle the redirect back to your application correctly.
 
-Create a Personal Access Token (PAT) in your [GitHub setting](https://github.com/settings/tokens). Use the `Configure SSO` button next to your created token to authorize `circlefin` organization. More instructions can be found [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), and check below links for creating GitHub PAT:
-- [Creating a fine-grained personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token)
-- [Creating a personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic)
-    
+#### Backend(NextJS)
+1. Navigate to the Backend Directory
+    ```bash
+    cd backend
+    ```
 
-## Installation
-```shell
-yarn add @circle-fin/w3s-pw-react-native-sdk
-```
-### Android
-Add the maven repository to your `android/build.gradle`. It's suggested that load settings from the `local.properties`:
-```properties
-repositories {
-	...
-	maven {
-        	Properties properties = new Properties()
-		// Load local.properties.
-        	properties.load(new File(rootDir.absolutePath + "/local.properties").newDataInputStream())
+2. Install the Dependencies
+   Install the required packages for the backend using the following command:
+    ```bash
+    mpn install
+    ```
 
-		url properties.getProperty('pwsdk.maven.url')
-		credentials {
-        		username properties.getProperty('pwsdk.maven.username')
-        		password properties.getProperty('pwsdk.maven.password')
-		}
-	}
-}
-```
-Add the maven setting values in the `local.properties` file.
-```properties
-pwsdk.maven.url=https://maven.pkg.github.com/circlefin/w3s-android-sdk
-pwsdk.maven.username=<GITHUB_USERNAME>
-pwsdk.maven.password=<GITHUB_PAT>
-```
-> **Note**
-> When pasting the values above for `<GITHUB_USERNAME>` and `<GITHUB_PAT>`, make sure to not surround the values with quotes.
-### iOS
-Run the command under `ios/`:
-```
-pod install
-```
-## New Architecture Support
-The SDK is supporting both React Native old and [new architectures](https://reactnative.dev/docs/the-new-architecture/landing-page).
-You can enable or disable the new architecture by changing the project setting.
-### Android
-Set the `android/gradle.properties` file as below to enable new architecture or false to disable. 
-```properties
-newArchEnabled=true
-```
-### iOS
-Reinstall your pods by running pod install with the right flag:
-```shell
-bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install
-```
-Or run without flag to use old architecture:
-```sh
-pod install
-```
-## Run the Sample App
-1. Edit `src/config.json` ➜ `pw_app_id` to fill in your `APP ID`.
-2. (Optional) Open the project in [Android Studio](https://developer.android.com/studio) and see if there's any build error.
-    - File ➜ Open ➜ choose `android` folder.
-    - File ➜ Sync Project with Files.
-    - Build ➜ Rebuild Project.
-3. (Optional) Open the project in [Xcode](https://apps.apple.com/tw/app/xcode/id497799835?mt=12) and build to see if there's any build error.
-    - Open `W3sSampleWallet.xcworkspace` in Xcode.
-    - Product ➜ Build.
-    - If the Metro server does not launch by Xcode, please run the command on project folder.
-      ```sh
-      yarn start
-      ```
-4. Run on device  
-    You can simply run the command below or find more detail on [reactnative.dev](https://reactnative.dev/docs/running-on-device?package-manager=yarn&platform=android).
-      - Android
-        ```sh
-        yarn android
-        ```
-      - iOS
-        ```sh
-        yarn ios
-        ```
-    
+3. Configure Environment Variables
+   In the root of the backend directory, create a `.env` file:
+   ```bash
+    touch .env
+    ```
 
- 5. Fill in the `App ID` and execute it along with `User Token`, `Encryption Key` and `Challenge ID`.    
-<img src="readme_images/running_app_ios.png" alt="drawing" width="300"/>
+    Populate the `.env` file with the following content:
+    ```bash
+    CIRCLE_API_KEY="YOUR_API_KEY_HERE"
+    CIRCLE_BASE_URL="https://api.circle.com/v1/w3s"
+    ```
+    Ensure you replace `YOUR_API_KEY_HERE` with your actual API key.
+
+## Running the App
+
+### Frontend (iOS)
+
+1. Run the App on a Simulator or Device
+   With the `.xcworkspace` open in Xcode, select your target simulator or device, then press the play button to compile and run the app.
+
+### Backend(NextJS)
+
+1. Start the NextJS Server
+   Initiate the backend server using:
+   ```bash
+    npm run dev
+    ```
+
+If you have questions, comments, or need help with code, we're here to help:
+
+* on [Discord](https://discord.com/invite/buildoncircle)
+* on Twitter at [@BuildOnCircle](https://twitter.com/BuildOnCircle)
+
+Check out our [developer docs](https://developers.circle.com/w3s/docs).

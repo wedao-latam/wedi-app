@@ -1,7 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-w3s-ios-sample-app-wallets/Pods-w3s-ios-sample-app-wallets-resources.sh
-${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.bundle
-${PODS_ROOT}/CircleProgrammableWalletSDK/Resources/CircleProgrammableWalletSDKBundle.bundle
-${PODS_ROOT}/DeviceKit/PrivacyInfo.xcprivacy
-${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit_Privacy.bundle
