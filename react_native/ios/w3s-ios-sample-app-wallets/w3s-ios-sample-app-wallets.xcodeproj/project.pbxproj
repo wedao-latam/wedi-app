@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0CE8F6472A5CDC26002BAFA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CE8F6462A5CDC26002BAFA1 /* GoogleService-Info.plist */; };
-		8A87EF21CDDBF222A8D83F4F /* Pods_w3s_ios_sample_app_wallets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F095FAC15E5990E5728EEDA8 /* Pods_w3s_ios_sample_app_wallets.framework */; };
-		B3BEDECF2A50648300861533 /* w3s_ios_sample_app_walletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BEDECE2A50648300861533 /* w3s_ios_sample_app_walletsApp.swift */; };
+		8A87EF21CDDBF222A8D83F4F /* Pods_wedi_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F095FAC15E5990E5728EEDA8 /* Pods_wedi_app.framework */; };
+		B3BEDECF2A50648300861533 /* wedi-app.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BEDECE2A50648300861533 /* wedi-app.swift */; };
 		B3BEDED62A50648400861533 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BEDED52A50648400861533 /* Preview Assets.xcassets */; };
 		B3BEDEDE2A5064E800861533 /* WalletSdkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BEDEDC2A5064E800861533 /* WalletSdkAdapter.swift */; };
 		B3BEDEDF2A5064E800861533 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BEDEDD2A5064E800861533 /* ContentView.swift */; };
@@ -87,7 +87,7 @@
 		0CE8F6462A5CDC26002BAFA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A3CF7646C645C27CFAD775D /* Pods-wedi-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wedi-app.debug.xcconfig"; path = "Target Support Files/Pods-wedi-app/Pods-wedi-app.debug.xcconfig"; sourceTree = "<group>"; };
 		B3BEDECB2A50648300861533 /* wedi-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wedi-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3BEDECE2A50648300861533 /* w3s_ios_sample_app_walletsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = w3s_ios_sample_app_walletsApp.swift; sourceTree = "<group>"; };
+		B3BEDECE2A50648300861533 /* wedi-app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wedi-app.swift; sourceTree = "<group>"; };
 		B3BEDED52A50648400861533 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3BEDEDC2A5064E800861533 /* WalletSdkAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletSdkAdapter.swift; sourceTree = "<group>"; };
 		B3BEDEDD2A5064E800861533 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		CC2584B32A5621D100FCDBE8 /* CircleWalletViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleWalletViewModel.swift; sourceTree = "<group>"; };
 		CC5CDDA12A54B21800518BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ED19DFB9C55BB7A8A6609DD9 /* Pods-wedi-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wedi-app.release.xcconfig"; path = "Target Support Files/Pods-wedi-app/Pods-wedi-app.release.xcconfig"; sourceTree = "<group>"; };
-		F095FAC15E5990E5728EEDA8 /* Pods_w3s_ios_sample_app_wallets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_w3s_ios_sample_app_wallets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F095FAC15E5990E5728EEDA8 /* Pods_wedi_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wedi_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D576D52C12EE6E00BBE64A /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D576D72C12EE6E00BBE64A /* appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appApp.swift; sourceTree = "<group>"; };
 		F6D576D92C12EE6E00BBE64A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 				F6D577202C12EEC300BBE64A /* FirebaseFunctions in Frameworks */,
 				CC2584A82A54D25500FCDBE8 /* GoogleSignInSwift in Frameworks */,
 				F6D5773A2C12EEE000BBE64A /* GoogleSignIn in Frameworks */,
-				8A87EF21CDDBF222A8D83F4F /* Pods_w3s_ios_sample_app_wallets.framework in Frameworks */,
+				8A87EF21CDDBF222A8D83F4F /* Pods_wedi_app.framework in Frameworks */,
 				F6D577042C12EEC300BBE64A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				F6D577182C12EEC300BBE64A /* FirebaseDynamicLinks in Frameworks */,
 				F6D577122C12EEC300BBE64A /* FirebaseCrashlytics in Frameworks */,
@@ -185,7 +185,7 @@
 		236289942EEF3E29EB4B4D89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F095FAC15E5990E5728EEDA8 /* Pods_w3s_ios_sample_app_wallets.framework */,
+				F095FAC15E5990E5728EEDA8 /* Pods_wedi_app.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 				0C961FFE2A58A8600070883F /* wedi-app.entitlements */,
 				CC5CDDA12A54B21800518BA9 /* Info.plist */,
 				B3BEDEE92A50653B00861533 /* Assets.xcassets */,
-				B3BEDECE2A50648300861533 /* w3s_ios_sample_app_walletsApp.swift */,
+				B3BEDECE2A50648300861533 /* wedi-app.swift */,
 				B3BEDEDD2A5064E800861533 /* ContentView.swift */,
 				0CE8F6462A5CDC26002BAFA1 /* GoogleService-Info.plist */,
 				B3BEDEDC2A5064E800861533 /* WalletSdkAdapter.swift */,
@@ -570,7 +570,7 @@
 				CC2584AC2A54D2E000FCDBE8 /* LoginView.swift in Sources */,
 				B3BEDEE62A50651700861533 /* UserDefault.swift in Sources */,
 				CC2584AA2A54D28800FCDBE8 /* GoogleSignInButton.swift in Sources */,
-				B3BEDECF2A50648300861533 /* w3s_ios_sample_app_walletsApp.swift in Sources */,
+				B3BEDECF2A50648300861533 /* wedi-app.swift in Sources */,
 				B3BEDEDE2A5064E800861533 /* WalletSdkAdapter.swift in Sources */,
 				CC2584B42A5621D200FCDBE8 /* CircleWalletViewModel.swift in Sources */,
 				B3BEDEDF2A5064E800861533 /* ContentView.swift in Sources */,

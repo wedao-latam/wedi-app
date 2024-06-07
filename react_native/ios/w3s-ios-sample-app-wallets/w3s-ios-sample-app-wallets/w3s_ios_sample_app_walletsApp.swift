@@ -16,7 +16,7 @@ import SwiftUI
 import Firebase
 
 @main
-struct w3s_ios_sample_app_walletsApp: App {
+struct wedi-app: App {
     var appState = AppState()
     
     init() {
@@ -33,7 +33,7 @@ struct w3s_ios_sample_app_walletsApp: App {
     }
 }
 
-extension w3s_ios_sample_app_walletsApp {
+extension wedi-app {
     private func setupAuthentication() {
         FirebaseApp.configure()
     }
