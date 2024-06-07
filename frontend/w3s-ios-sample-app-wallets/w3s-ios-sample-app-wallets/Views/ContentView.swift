@@ -24,7 +24,7 @@ struct ContentView: View {
     let adapter = WalletSdkAdapter()
     
     let endPoint = "https://api.circle.com/v1/w3s"
-    @State var appId = "your-App-ID"
+    @State var appId = "2261ccc4-a065-5336-9b05-ada3d4d72703"
     
     init() {
         self.adapter.initSDK(endPoint: endPoint, appId: appId)

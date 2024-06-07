@@ -85,3 +85,160 @@ If you have questions, comments, or need help with code, we're here to help:
 * on Twitter at [@BuildOnCircle](https://twitter.com/BuildOnCircle)
 
 Check out our [developer docs](https://developers.circle.com/w3s/docs).
+
+
+
+## Installation & Deployment Debugging
+
+
+
+It seems the CocoaPods version on your system is still 1.5.2. You need to update it to at least 1.13.0. Let's try updating CocoaPods again, and ensure we are using the correct installation method. Follow these steps:
+
+### 1. Uninstall Existing CocoaPods
+
+First, uninstall the current version of CocoaPods:
+
+```bash
+sudo gem uninstall cocoapods
+```
+
+### 2. Reinstall CocoaPods
+
+Now, install the latest version of CocoaPods:
+
+#### Using RubyGems:
+
+```bash
+sudo gem install cocoapods
+```
+
+#### Using Homebrew:
+
+```bash
+brew install cocoapods
+```
+
+### 3. Verify Installation
+
+Verify that the installation was successful and that you have the correct version:
+
+```bash
+pod --version
+```
+
+You should see a version equal to or higher than 1.13.0.
+
+### 4. Reinstall Pods
+
+Navigate to your project directory and update the pods:
+
+```bash
+cd /path/to/your/project
+pod repo update
+pod install --repo-update
+```
+
+### 5. Clean Xcode Project
+
+If the project still fails to build, try cleaning the Xcode project and deleting derived data:
+
+```bash
+rm -rf ~/Library/Developer/Xcode/DerivedData
+```
+
+Then, in Xcode, go to `Product > Clean Build Folder` (or press `Shift + Command + K`). After cleaning the build folder, try building the project again.
+
+### Summary
+
+1. **Uninstall Existing CocoaPods**: Remove the old version.
+2. **Reinstall CocoaPods**: Install the latest version.
+3. **Verify Installation**: Check the CocoaPods version.
+4. **Update Pods**: Run `pod repo update` and `pod install --repo-update`.
+5. **Clean Xcode Project**: Remove derived data and clean the build folder.
+6. **Improved Podfile**: Use the provided `Podfile` with additional dependencies and configurations.
+7. **Open Xcode Workspace**: Open the `.xcworkspace` or `.xcodeproj` file in Xcode.
+8. **Build and Run**: Try building and running the project again.
+
+
+
+### 1. Ensure Correct Dependencies in Podfile
+
+First, make sure your `Podfile` includes all the necessary dependencies:
+
+```ruby
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/circlefin/w3s-ios-sdk.git'
+
+platform :ios, '14.0'
+
+target 'w3s-ios-sample-app-wallets' do
+  # Use frameworks for dependencies
+  use_frameworks! :linkage => :static
+
+  # Add necessary pods
+  pod 'CircleProgrammableWalletSDK'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+
+  # Ensure proper Swift version
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+        config.build_settings['SWIFT_VERSION'] = '5.0'
+      end
+    end
+  end
+end
+```
+
+### 2. Update CocoaPods and Reinstall Pods
+
+Ensure you have the latest version of CocoaPods installed and then reinstall the pods:
+
+```bash
+sudo gem install cocoapods
+pod repo update
+pod install --repo-update
+```
+
+### 3. Clean Xcode Project
+
+Clean the Xcode project and delete derived data:
+
+```bash
+rm -rf ~/Library/Developer/Xcode/DerivedData
+```
+
+Then, in Xcode, go to `Product > Clean Build Folder` (or press `Shift + Command + K`).
+
+### 4. Verify Module Import Paths
+
+Ensure that the import statements in your Swift files match the modules provided by your dependencies. For example, the line `import Firebase` should match the module name provided by the Firebase pod.
+
+### 5. Check for Missing or Incorrect Configuration
+
+If the issues persist, check for any missing or incorrect configuration in your project settings:
+
+- Go to your project settings in Xcode.
+- Verify that the `Framework Search Paths` and `Header Search Paths` are correctly set up.
+- Ensure that the `Build Phases` include the necessary steps to compile and link the pods.
+
+### 6. Manual Integration (If Necessary)
+
+If automated dependency management with CocoaPods is causing issues, you can try manually integrating the dependencies using Swift Package Manager (SPM):
+
+- Go to `File > Swift Packages > Add Package Dependency...`
+- Add the URLs for `Firebase` and `GoogleSignIn` manually.
+
+### Debugging Specific Errors
+
+#### No Such Module `CircleProgrammableWalletSDK`
+
+Ensure that `CircleProgrammableWalletSDK` is correctly added to your `Podfile` and that it is available in the CocoaPods repository you are using.
+
+#### Redefinition of Module `Firebase`
+
+This could happen if Firebase is imported in multiple ways. Make sure you are using CocoaPods or SPM, but not both for the same module.
+
+
