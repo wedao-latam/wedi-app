@@ -241,4 +241,71 @@ Ensure that `CircleProgrammableWalletSDK` is correctly added to your `Podfile` a
 
 This could happen if Firebase is imported in multiple ways. Make sure you are using CocoaPods or SPM, but not both for the same module.
 
+# Step 1: Remove .env from Git tracking but keep it locally
+git rm --cached .env
 
+# Step 2: Add .env to .gitignore to prevent future tracking
+echo ".env" >> .gitignore
+
+# Step 3: Rewrite Git history to remove .env from all commits
+# WARNING: This is a destructive operation and will rewrite history!
+# Make sure to backup your repository and inform all collaborators to re-clone the repository after this operation.
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch .env" \
+  --prune-empty --tag-name-filter cat -- --all
+
+# Step 4: Force push the changes to the remote repository
+git push origin --force --all
+
+
+To remove the `Pods/` directory from Git tracking history and reduce the repository size, follow these steps:
+
+1. **Ensure `Pods/` is listed in your [`.gitignore`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Fbroomva%2FGitHub%2Fwedi-app%2F.gitignore%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/Users/broomva/GitHub/wedi-app/.gitignore") file.** It seems you've already done this.
+
+2. **Use `git filter-branch` or a specialized tool like BFG Repo-Cleaner to remove `Pods/` from your repository's history.**
+
+Here's how you can do it using `git filter-branch`:
+
+```bash
+# WARNING: This command will rewrite history!
+# Make sure to backup your repository before running this command.
+git filter-branch --force --index-filter \
+  'git rm -r --cached --ignore-unmatch Pods/' \
+  --prune-empty --tag-name-filter cat -- --all
+```
+
+3. **Force push the changes to your remote repository:**
+
+```bash
+git push origin --force --all
+git push origin --force --tags
+```
+
+**Important Considerations:**
+- **Backup your repository** before performing these operations, as they can be destructive.
+- **Inform all collaborators** about the change. They will need to fetch the latest changes and may need to re-clone the repository to ensure they do not reintroduce the removed files or directories.
+- For large repositories or more complex history rewrites, consider using a tool like **BFG Repo-Cleaner** for a more efficient process. BFG is faster and simpler to use for removing large files or folders from your Git history.
+
+Here's a quick guide on using BFG Repo-Cleaner to remove the `Pods/` directory:
+
+1. **Clone your repository using `--mirror`:**
+
+```bash
+git clone --mirror https://github.com/yourusername/yourrepository.git
+```
+
+2. **Run BFG Repo-Cleaner to remove the `Pods/` directory:**
+
+```bash
+java -jar bfg.jar --delete-folders Pods --no-blob-protection yourrepository.git
+```
+
+3. **Clean up and push the changes:**
+
+```bash
+cd yourrepository.git
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+git push --force
+```
+
+Remember, after performing these operations, it's crucial to run `pod install` locally to regenerate the `Pods/` directory since it won't be tracked by Git anymore.
