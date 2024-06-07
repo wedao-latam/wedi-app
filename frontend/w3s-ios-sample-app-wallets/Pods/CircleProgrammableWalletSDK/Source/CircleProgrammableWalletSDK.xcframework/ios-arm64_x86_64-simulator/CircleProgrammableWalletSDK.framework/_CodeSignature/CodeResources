@@ -6,19 +6,23 @@
 	<dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/CirclePWLocalizable.strings</key>
 		<data>
-		nQPwqHgVqVKRcrVZox10tDlT0OE=
+		WtLi0KNHHhyh1NdOdSRwF/2al2w=
 		</data>
 		<key>CircleProgrammableWalletSDKBundle.bundle/CirclePWTheme.json</key>
 		<data>
-		CoIYlESnht8h6g5dMFUK1Ut7l2I=
+		Rk1l9h1N7WgcCsxmTRV9o5j7F1U=
 		</data>
 		<key>CircleProgrammableWalletSDKBundle.bundle/Info.plist</key>
 		<data>
-		UXBS7c+k5qIKtpZxgLbGev+nJug=
+		Y5pw5LMYIymOQRlgy6BhFyo9VDM=
+		</data>
+		<key>CircleProgrammableWalletSDKBundle.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		G+J3sjhHkcD6+SIiUA2K9sEu5+A=
 		</data>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		LjBmh2HAd7aNmUwUxKFYhYer8X4=
+		oKgMOeU5V1Kv0AH5WZhlRvZ6Lqk=
 		</data>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -26,11 +30,11 @@
 		</data>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		jtohFc+8dyxd3iliQ98/5n6edC0=
+		MsQMverWfHy7HUZq/p2bnRn8yWs=
 		</data>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		g89EzcHoCe4jsRDuuvYJUrFkHZg=
+		/1qzNPVhtEfY7waQCf425IVSWcI=
 		</data>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Headers/CircleProgrammableWalletSDK-Swift.h</key>
 		<data>
-		8uZoYUk3nK9WVx/xkPcYe1pdryE=
+		+5AFTIKXXRjLTTYJMBUUsUB8prg=
 		</data>
 		<key>Headers/CircleProgrammableWalletSDK.h</key>
 		<data>
@@ -46,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Kmf4DGkPAPVHJ5hPKU8yP0zD5lw=
+		XrdEYx0kReYf41yr0UVXMf+vq9U=
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +58,19 @@
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		af7KxQev1O22MGTltTDnWunoOlc=
+		Jqxb7xWua0hcWBystbVDISQfGFE=
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		69XQcF7l9zcmpwzhXJ6sLdi0hmM=
+		dLxCp7n7D+Cxxx8PAfFT2dUk1O0=
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		af7KxQev1O22MGTltTDnWunoOlc=
+		Jqxb7xWua0hcWBystbVDISQfGFE=
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6FSXwD39SRRJCjuNSxe+qV2Y3Bo=
+		OLZQ/pxB458hiGuq2uqgHvYeQIk=
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -74,77 +78,68 @@
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		UwWtDk/uJ7W66HsUBkaVz0YxEw8=
+		StAYsSHwhqX34415NhRWI2RqjJ0=
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zNAHvhKA62P3I808zsgdVfBOQpk=
+		voGC1/r2MGBLI8M3ouLNX/7499w=
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UwWtDk/uJ7W66HsUBkaVz0YxEw8=
+		StAYsSHwhqX34415NhRWI2RqjJ0=
 		</data>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		C+S7n+l6Zd9UEq1msJBVHWxMDtc=
+		EqMhUqMTdXrRYenPKc2Vwuc7T58=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		nBMMmP9tRuNYpwiMctNLAXP9PRc=
+		mYwDP4VH3oqas3yfr/zW6CGIEeA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		G+J3sjhHkcD6+SIiUA2K9sEu5+A=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/CirclePWLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nQPwqHgVqVKRcrVZox10tDlT0OE=
-			</data>
 			<key>hash2</key>
 			<data>
-			n4oawmln9daEgUHqh0NAsJFVZT4x7HGI2gmm3Q3NiXw=
+			dEArHnMoo23JUJnWLE8KCEu0CRgucAVqKbTCTDEIAIs=
 			</data>
 		</dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/CirclePWTheme.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CoIYlESnht8h6g5dMFUK1Ut7l2I=
-			</data>
 			<key>hash2</key>
 			<data>
-			dusnmKNkCdvD+vGJY2eaxJhmxTPBVqlcjr4cboeuwS4=
+			APbzoAhxegbjhSwy75r6ap9jFQLRpSN2WsvKahF97vQ=
 			</data>
 		</dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UXBS7c+k5qIKtpZxgLbGev+nJug=
-			</data>
 			<key>hash2</key>
 			<data>
-			vTqPt2dG78mSSzHNpIig2vzjAyxxNIYusZC5Bo6+HJc=
+			GJCt55dxHQxGrUO3Aoy72dKpwB4yDJXJnsyUh4UrBis=
+			</data>
+		</dict>
+		<key>CircleProgrammableWalletSDKBundle.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YKZAQnYJ9mUUVuGK2GE4LuDmEaslWuxNUVSdWEIEggg=
 			</data>
 		</dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LjBmh2HAd7aNmUwUxKFYhYer8X4=
-			</data>
 			<key>hash2</key>
 			<data>
-			wH4ODpkvheq2eL71fBw46mIodxc8VxRctgTvMT6z3qs=
+			xiaWKmiaoaH3vBG9Gq1juzGJvPT48iNCAjV0IW5OIBs=
 			</data>
 		</dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeRequirements</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
 			<key>hash2</key>
 			<data>
 			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
@@ -152,32 +147,20 @@
 		</dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeRequirements-1</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jtohFc+8dyxd3iliQ98/5n6edC0=
-			</data>
 			<key>hash2</key>
 			<data>
-			sknsl1zyjsAm1URzQnB554KzCj/EtGIXUafwJisNkw0=
+			mMCwK/aqwv5wmTvRDW1chlknhIFOXep/F3HVRZao0Jk=
 			</data>
 		</dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			g89EzcHoCe4jsRDuuvYJUrFkHZg=
-			</data>
 			<key>hash2</key>
 			<data>
-			y6KpIF337q+43bjIkN+F/CT7Vp8uqm2Q60Ej7np0x6w=
+			kjbPywoKUKgZS+asbVw+fRrVWGpokWDU/uI01F2p2mg=
 			</data>
 		</dict>
 		<key>CircleProgrammableWalletSDKBundle.bundle/_CodeSignature/CodeSignature</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
@@ -185,21 +168,13 @@
 		</dict>
 		<key>Headers/CircleProgrammableWalletSDK-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8uZoYUk3nK9WVx/xkPcYe1pdryE=
-			</data>
 			<key>hash2</key>
 			<data>
-			xDttxvSp03ewkQotRp9hNSfp3BOHUMPh7uCgq+zcQMc=
+			g8RDkH9Z94JflshwqO36pYkvvx/RBqr0I9bdrQNftk0=
 			</data>
 		</dict>
 		<key>Headers/CircleProgrammableWalletSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xXYaXKan4frl15qrloxqIzI1jMc=
-			</data>
 			<key>hash2</key>
 			<data>
 			5GekZjYSsy6cMt+meFgUGhQLPRSxckn5P8zEctwEn8g=
@@ -207,10 +182,6 @@
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FSPnLbho3G+LL9smI3XgVOqBIQ4=
-			</data>
 			<key>hash2</key>
 			<data>
 			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
@@ -218,54 +189,34 @@
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			af7KxQev1O22MGTltTDnWunoOlc=
-			</data>
 			<key>hash2</key>
 			<data>
-			yNEYC8B+j8/l4mGKT7rfv4Yimp8kwXk2dImcVUNyneE=
+			kaT88kCUz6Rwp4Sm7d2y+N+aagqNc2Jx7BcjOdfHaG0=
 			</data>
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			69XQcF7l9zcmpwzhXJ6sLdi0hmM=
-			</data>
 			<key>hash2</key>
 			<data>
-			VeLmzSWqqF5jNbLRpux0zJUtv1w1KvWFmNqA1YEp56c=
+			LAmmOr8PMmB/SZEpyYj4Z9kmgQAJniMTa/SnUp3++O4=
 			</data>
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			af7KxQev1O22MGTltTDnWunoOlc=
-			</data>
 			<key>hash2</key>
 			<data>
-			yNEYC8B+j8/l4mGKT7rfv4Yimp8kwXk2dImcVUNyneE=
+			kaT88kCUz6Rwp4Sm7d2y+N+aagqNc2Jx7BcjOdfHaG0=
 			</data>
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6FSXwD39SRRJCjuNSxe+qV2Y3Bo=
-			</data>
 			<key>hash2</key>
 			<data>
-			G7V6cvdAv9TNqVRve6O3rdo7czYeYgtq9FeRdnjuvH0=
+			D2TkRFwgCZ2ytBvyps2rhr7jP3HTV89XGBeyGHpm/pE=
 			</data>
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FSPnLbho3G+LL9smI3XgVOqBIQ4=
-			</data>
 			<key>hash2</key>
 			<data>
 			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
@@ -273,57 +224,44 @@
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UwWtDk/uJ7W66HsUBkaVz0YxEw8=
-			</data>
 			<key>hash2</key>
 			<data>
-			PaEWL727ptjgqhUkE5QG2KMzWJjjbOH0w2U4ojQp0FE=
+			SzFUSmPBuWVJY8RAxe/mjrFFr8C/j2b3idJX5BtPwHM=
 			</data>
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zNAHvhKA62P3I808zsgdVfBOQpk=
-			</data>
 			<key>hash2</key>
 			<data>
-			w12fRgtHo7UndPjySls6f3kNiD0UkLL7dppcaEaUPJQ=
+			cnU2AK4QZ70l42t6pg7u3zj9XrQVm3duQu0fBCpGElQ=
 			</data>
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UwWtDk/uJ7W66HsUBkaVz0YxEw8=
-			</data>
 			<key>hash2</key>
 			<data>
-			PaEWL727ptjgqhUkE5QG2KMzWJjjbOH0w2U4ojQp0FE=
+			SzFUSmPBuWVJY8RAxe/mjrFFr8C/j2b3idJX5BtPwHM=
 			</data>
 		</dict>
 		<key>Modules/CircleProgrammableWalletSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C+S7n+l6Zd9UEq1msJBVHWxMDtc=
-			</data>
 			<key>hash2</key>
 			<data>
-			FPZf0r0fwqy4n4atKrS3DtMqSs7I4yl47H83C9ITyyU=
+			B9DH8k2rsK4qzPxz+dNSLqmQzVFkKThhSiEqUSz43LA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nBMMmP9tRuNYpwiMctNLAXP9PRc=
-			</data>
 			<key>hash2</key>
 			<data>
-			6wE5daD4WwXz1pggPclYbXE/acPepMkst6KN+LsTVCw=
+			YP6WZxC3+VwqJiFlhgRQ4f1sHcApD9XGRg3ixHbG0aU=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YKZAQnYJ9mUUVuGK2GE4LuDmEaslWuxNUVSdWEIEggg=
 			</data>
 		</dict>
 	</dict>

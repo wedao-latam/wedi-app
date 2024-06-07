@@ -1,15 +1,18 @@
 PODS:
-  - Alamofire (5.5.0)
+  - Alamofire (5.9.0)
   - AppAuth (1.7.5):
     - AppAuth/Core (= 1.7.5)
     - AppAuth/ExternalUserAgent (= 1.7.5)
   - AppAuth/Core (1.7.5)
   - AppAuth/ExternalUserAgent (1.7.5):
     - AppAuth/Core
-  - CircleProgrammableWalletSDK (1.0.6):
-    - Alamofire (= 5.5.0)
-    - IQKeyboardManagerSwift (= 6.5.11)
-    - SDWebImage (= 5.9.1)
+  - CircleProgrammableWalletSDK (1.0.16):
+    - Alamofire (= 5.9.0)
+    - DeviceKit (= 5.2.0)
+    - IQKeyboardManagerSwift (= 7.0.1)
+    - SDWebImage (= 5.18.10)
+    - SnapKit (= 5.7.1)
+  - DeviceKit (5.2.0)
   - Firebase/Auth (10.27.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 10.27.0)
@@ -59,12 +62,13 @@ PODS:
     - AppAuth/Core (~> 1.7)
     - GTMSessionFetcher/Core (< 4.0, >= 3.3)
   - GTMSessionFetcher/Core (3.4.1)
-  - IQKeyboardManagerSwift (6.5.11)
+  - IQKeyboardManagerSwift (7.0.1)
   - PromisesObjC (2.4.0)
   - RecaptchaInterop (100.0.0)
-  - SDWebImage (5.9.1):
-    - SDWebImage/Core (= 5.9.1)
-  - SDWebImage/Core (5.9.1)
+  - SDWebImage (5.18.10):
+    - SDWebImage/Core (= 5.18.10)
+  - SDWebImage/Core (5.18.10)
+  - SnapKit (5.7.1)
 
 DEPENDENCIES:
   - CircleProgrammableWalletSDK
@@ -77,6 +81,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AppAuth
+    - DeviceKit
     - Firebase
     - FirebaseAppCheckInterop
     - FirebaseAuth
@@ -90,11 +95,13 @@ SPEC REPOS:
     - PromisesObjC
     - RecaptchaInterop
     - SDWebImage
+    - SnapKit
 
 SPEC CHECKSUMS:
-  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
   AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
-  CircleProgrammableWalletSDK: 6ac2ee45306fe3ab0e99d8b4f1d7b0691eeff2ff
+  CircleProgrammableWalletSDK: 15dad1366f847cd12ff73293ce02f823f794750a
+  DeviceKit: 4167e8ffbfaff06e346f113e0142ac18fc1b16ff
   Firebase: 26b040b20866a55f55eb3611b9fcf3ae64816b86
   FirebaseAppCheckInterop: 0dd062c9926a76332ca5711dbed6f1a9ac540b54
   FirebaseAuth: 77a012b7e08042bf44d0db835ca2e86e6ca7bbd3
@@ -104,10 +111,11 @@ SPEC CHECKSUMS:
   GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
   GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
   GTMSessionFetcher: 8000756fc1c19d2e5697b90311f7832d2e33f6cd
-  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  IQKeyboardManagerSwift: 7f6b1b1d1497855d2beea7f2f10ffcc6978525b1
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
-  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
+  SDWebImage: fc8f2d48bbfd72ef39d70e981bd24a3f3be53fec
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
 PODFILE CHECKSUM: eb6af5a48b1eb403bc3b236ea5e8256a561a24b6
 
